@@ -1,32 +1,24 @@
 # Exercise
 
-## Step 1
+## Step 01
 
-- create an `api.ts` file with the networking logic (using the native `fetch` function)
-  - Endpoint: https://my-json-server.typicode.com/matteo-naif/example-crud
-- create a `component/userList` component that renders raw JSON
-- Render the data visually in a dedicated `component/user` component
+- Nel file `api.ts` aggiungi la funzione `fetchUserList` per effettuare il fetching dei dati
+- in `index.tsx`effettua il fetching dei dati usando react-query
+- utilizza `ts-pattern` per gestire gli stati della query
 
 ## Step 2
 
-- Define a `User` model using `io-ts`
-- Use the model to validate the incoming JSON
+- Definisci il model `UserModel` usando `io-ts`
+- Usa il modello per validare il JSON in entrata
 
 ## Step 3
 
-- Use `useQuery` from `react-query` instead of fetching data in `useEffect`
-- Handle error and loading cases in the rendering
+- Crea un component `userList` che renderizza il risultato della fetch di dati
+- Visualizza i dati restituiti con il componente Table
 
 ## Step 4
 
-- Use sum types and `switch` to improve the handling of query states
-- 💡 Tips
-    - Use `.status` on the result of `useQuery`
-
-## Step 6
-
-- For each user, show a button to delete it
-- Display the status of the deletion in the button
-- 💡 Tips:
-    - Use a `react-query` mutation to delete
-    - Invalidate `trips` to refresh the list
+- Per ogni user, mostra un bottone per cancellarlo
+- Nel file `api.ts` aggiungi la funzione `deleteUser`
+- utilizza una mutation per gestire la delete
+- se la delete viene eseguita correttamente mostra un 
