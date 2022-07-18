@@ -1,10 +1,9 @@
 # Exercise
 
-## Step 1
+## Step 01
 
-- create an `api.ts` file with the networking logic (using the native `fetch` function)
-  - Endpoint: https://my-json-server.typicode.com/matteo-naif/example-crud
-- create a `component/userList` component that renders raw JSON
+- Nel file `api.ts` aggiungi le funzioni per effettuare il fetching dei dati
+- create a `userList` component that renders raw JSON
 - Render the data visually in a dedicated `component/user` component
 
 ## Step 2
