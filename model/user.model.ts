@@ -1,9 +1,3 @@
-type UserModel = {
-    id: string;
-    imageUrl: string;
-    name: string;
-    age?: number;
-    email: string;
-}
+type UserModel = {}
 
 export type { UserModel }
