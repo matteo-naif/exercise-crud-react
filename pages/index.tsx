@@ -8,7 +8,9 @@ import { match } from 'ts-pattern'
 const Home: NextPage = () => {
 	const queryClient = useQueryClient()
 
-	let { data, status } = useQuery('userList', fetchUserList, {})
+	let { data, status } = useQuery('userList', fetchUserList, {
+		staleTime: Infinity,
+	})
 
 	const { mutate } = useMutation('deleteUserList', deleteUser, {
 		onSuccess: (response) => {
